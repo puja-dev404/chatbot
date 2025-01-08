@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Outfit, sans-serif;
+}
+
+.auth-wrapper {
+  height: 100vh;
+  padding: 44px;
+}
+
+.auth-form {
+  width: 50%;
+  margin: auto;
+}
+
+.auth-form-element {
+  width: 100%;
+  height: calc(100vh - 88px);
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.auth-form-head {
+  width: 50%;
+  margin: auto;
+}
+
+.auth-form-footer {
+  width: 50%;
+  display: flex;
+  margin: auto;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.password-toggle {
+  cursor: pointer;
+}
+
+.L_heading h1 {
+  font-size: 34px;
+  font-weight: 600;
+  color: #0177FB;
+}
+
+.social_link button {
+  padding: 10px;
+  color: #18171B;
+  border-radius: 8px;
+  border: 1.2px solid #D8D8D8;
+}
+
+.social_btn-icon {
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+}
+
+.social_btn-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.L_sub-heading h2 {
+  color: #18171B;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.sub_para span {
+  color: #666;
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+}
+
+.sub_para hr {
+  width: 165px;
+  height: 1.2px;
+  color: #666;
+}
+
+.form-control {
+  padding: 14px 0px;
+  border-radius: 8px;
+  border: 1.2px solid rgba(102, 102, 102, 0.25);
+}
+
+.check-sec label {
+  color: #666;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.check-sec input {
+  border-radius: 3.4px;
+  border: 1.7px solid rgba(102, 102, 102, 0.50);
+}
+
+.password-toggle {
+  right: 19px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #666;
+}
+
+.btn-primary {
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: #0177FB;
+  border: 1px solid #0177FB;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  border: 1px solid #0177FB;
+  color: #0177FB;
+  background-color: #fff;
+}
+
+.register-text {
+  color: #666;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.register-text a {
+  color: black;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.num_box button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1.2px solid rgba(102, 102, 102, 0.25);
+  font-size: 18px;
+}
+
+.bottom_para p {
+  color: #666;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

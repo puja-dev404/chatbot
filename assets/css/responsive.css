@@ -1,0 +1,86 @@
+@media (max-width: 479px) {
+    .auth-wrapper {
+        padding: 18px;
+    }
+
+    .auth-form-element {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .auth-form-head {
+        width: 100%;
+    }
+
+    .auth-form {
+        width: 100%;
+    }
+
+    .auth-form-footer {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .sub_para hr {
+        width: 102px;
+    }
+}
+
+/* // Medium devices 768px and up */
+@media (min-width: 480px) and (max-width: 767px) {
+    .auth-form-element {
+        width: 100%;
+        height: calc(100vh - 50px);
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .auth-form-head {
+        width: 80%;
+    }
+
+    .auth-form {
+        width: 80%;
+    }
+
+    .sub_para hr {
+        width: 95px;
+    }
+}
+
+/* // Large devices 992px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .auth-form-element {
+        width: 100%;
+        height: calc(100vh - 88px);
+    }
+
+    .auth-form-head {
+        width: 100%;
+    }
+
+    .auth-form-head {
+        width: 100%;
+    }
+
+    .auth-form {
+        width: 100%;
+    }
+
+    .auth-form-footer {
+        width: 100%;
+    }
+
+    .sub_para hr {
+        width: 120px;
+    }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1400px) {}

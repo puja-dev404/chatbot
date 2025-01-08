@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting | Test | Chatbot</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../assets/css/index.css" />
+    <link rel="stylesheet" href="../../assets/css/layout.css" />
+    <link rel="stylesheet" href="../../assets/css/setting.css" />
+    <link rel="stylesheet" href="../../assets/css/responsive.css" />
+
+</head>
+
+<body>
+    <div class="head-announcement">
+        <div class="py-2 px-5 rounded-1 d-flex justify-content-between align-items-center bg-primary-light">
+            <div class="head-announcement-left">
+                <span class="pe-2 f-14">You have <span class="text-primary f-16">14 days left</span> in your
+                    assential
+                    trial</span>
+                <button type="button" class="btn btn-dark btn-sm">Buy Plan</button>
+            </div>
+            <div class="head-announcement-right d-flex gap-2 align-items-center">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                        <path
+                            d="M17.22 12.7604C17.57 11.9104 17.76 11.0004 17.76 10.0004C17.76 9.28043 17.65 8.59043 17.46 7.95043C16.81 8.10043 16.13 8.18044 15.42 8.18044C13.966 8.182 12.5329 7.83396 11.2415 7.16566C9.95018 6.49736 8.83843 5.52839 8 4.34044C7.10396 6.51118 5.41172 8.25708 3.27 9.22044C3.23 9.47044 3.23 9.74043 3.23 10.0004C3.23 10.9551 3.41804 11.9005 3.7834 12.7825C4.14875 13.6646 4.68425 14.466 5.35933 15.1411C6.72272 16.5045 8.57188 17.2704 10.5 17.2704C11.55 17.2704 12.56 17.0404 13.47 16.6304C14.04 17.7204 14.3 18.2604 14.28 18.2604C12.64 18.8104 11.37 19.0804 10.5 19.0804C8.08 19.0804 5.77 18.1304 4.07 16.4204C3.03505 15.3904 2.26627 14.1239 1.83 12.7304H0.5V8.18044H1.59C1.92024 6.57295 2.67949 5.08484 3.78719 3.87403C4.89489 2.66321 6.30971 1.77484 7.88153 1.30319C9.45335 0.831544 11.1235 0.794207 12.7149 1.19514C14.3062 1.59608 15.7593 2.42033 16.92 3.58043C18.1798 4.83601 19.0393 6.43672 19.39 8.18044H20.5V12.7304H20.44L16.88 16.0004L11.58 15.4004V13.7304H16.41L17.22 12.7604ZM7.77 9.77044C8.07 9.77044 8.36 9.89043 8.57 10.1104C8.78105 10.3232 8.89947 10.6107 8.89947 10.9104C8.89947 11.2101 8.78105 11.4977 8.57 11.7104C8.36 11.9204 8.07 12.0404 7.77 12.0404C7.14 12.0404 6.63 11.5404 6.63 10.9104C6.63 10.2804 7.14 9.77044 7.77 9.77044ZM13.22 9.77044C13.85 9.77044 14.35 10.2804 14.35 10.9104C14.35 11.5404 13.85 12.0404 13.22 12.0404C12.59 12.0404 12.08 11.5404 12.08 10.9104C12.08 10.6081 12.2001 10.3181 12.4139 10.1043C12.6277 9.89054 12.9177 9.77044 13.22 9.77044Z"
+                            fill="#0177FB"></path>
+                    </svg>
+                </div>
+                <div class="">Need help onboarding? <span class="text-primary">Talk to Sales</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="wraper">
+        <div class="main-contant">
+            <!-- Sidebar -->
+            <div class="sidebar-icons py-3 bg-primary">
+                <div class="sidebar-logo mb-5">
+                    <img src="../../assets/images/Klizo-logo.png" alt="" srcset="">
+                </div>
+                <div class="sidebar-icon-menu d-flex flex-column justify-content-between">
+                    <div class="sidebar-icon-top text-center">
+                        <a href="../../dashboard.html" class="sidebar-icon-btn mb-2">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11 19.9V4.1C11 2.6 10.36 2 8.77 2H4.73C3.14 2 2.5 2.6 2.5 4.1V19.9C2.5 21.4 3.14 22 4.73 22H8.77C10.36 22 11 21.4 11 19.9Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M21.5 10.9V4.1C21.5 2.6 20.86 2 19.27 2H15.23C13.64 2 13 2.6 13 4.1V10.9C13 12.4 13.64 13 15.23 13H19.27C20.86 13 21.5 12.4 21.5 10.9Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M21.5 19.9V17.1C21.5 15.6 20.86 15 19.27 15H15.23C13.64 15 13 15.6 13 17.1V19.9C13 21.4 13.64 22 15.23 22H19.27C20.86 22 21.5 21.4 21.5 19.9Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="sidebar-icon-footer text-center">
+                        <a href="./home.html" class="sidebar-icon-btn active my-4">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M2 12.8799V11.1199C2 10.0799 2.85 9.21994 3.9 9.21994C5.71 9.21994 6.45 7.93994 5.54 6.36994C5.02 5.46994 5.33 4.29994 6.24 3.77994L7.97 2.78994C8.76 2.31994 9.78 2.59994 10.25 3.38994L10.36 3.57994C11.26 5.14994 12.74 5.14994 13.65 3.57994L13.76 3.38994C14.23 2.59994 15.25 2.31994 16.04 2.78994L17.77 3.77994C18.68 4.29994 18.99 5.46994 18.47 6.36994C17.56 7.93994 18.3 9.21994 20.11 9.21994C21.15 9.21994 22.01 10.0699 22.01 11.1199V12.8799C22.01 13.9199 21.16 14.7799 20.11 14.7799C18.3 14.7799 17.56 16.0599 18.47 17.6299C18.99 18.5399 18.68 19.6999 17.77 20.2199L16.04 21.2099C15.25 21.6799 14.23 21.3999 13.76 20.6099L13.65 20.4199C12.75 18.8499 11.27 18.8499 10.36 20.4199L10.25 20.6099C9.78 21.3999 8.76 21.6799 7.97 21.2099L6.24 20.2199C5.33 19.6999 5.02 18.5299 5.54 17.6299C6.45 16.0599 5.71 14.7799 3.9 14.7799C2.85 14.7799 2 13.9199 2 12.8799Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <div class="sidebar-profile-img">
+                            <img src="../../assets/images/user_img.png" alt="" class="setting-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-main-menus fw-bold">
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="f-20">Settings</span>
+                    <div type="button" class="btn btn-primary float-end px-2 py-1 rounded collapse-menu">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.9998 19.92L8.47984 13.4C7.70984 12.63 7.70984 11.37 8.47984 10.6L14.9998 4.07996"
+                                stroke="#FFF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div>
+                    <input class="form-control me-2 mt-4" type="search" placeholder="Search" aria-label="Search">
+                </div>
+                <div>
+                    <ul class="mt-2 list-unstyled sidebar-menu">
+                        <li class="sidebar-menu-item">
+                            <a href="./home.html" class="sidebar-menu-link">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item menu-should-openig">
+                            <a href="#" class="sidebar-menu-link active">
+                                <span>workspace</span>
+                                <span>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.91016 19.92L15.4302 13.4C16.2002 12.63 16.2002 11.37 15.4302 10.6L8.91016 4.07996"
+                                            stroke="currentColor" stroke-width="2" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </a>
+                            <ul class="sidebar-submenu d-block">
+                                <li class="sidebar-submenu-items">
+                                    <a href="./general.html" class="sidebar-submenu-link">
+                                        <span>
+                                            <svg width="24" height="24" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.5 10H17.5M2.5 5H17.5M2.5 15H12.5" stroke="currentColor"
+                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                        <span>General</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-submenu-items">
+                                    <a href="./billing.html" class="sidebar-submenu-link">
+                                        <span>
+                                            <svg width="26" height="26" viewBox="0 0 20 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M18.3337 7.33333H1.66699M9.16699 14.8333L15.667 14.8333C16.6004 14.8333 17.0671 14.8333 17.4236 14.6517C17.7372 14.4919 17.9922 14.2369 18.152 13.9233C18.3337 13.5668 18.3337 13.1001 18.3337 12.1667V5.83333C18.3337 4.89991 18.3337 4.4332 18.152 4.07668C17.9922 3.76308 17.7372 3.50811 17.4236 3.34832C17.0671 3.16667 16.6004 3.16667 15.667 3.16667H14.167M9.16699 14.8333L10.8337 16.5M9.16699 14.8333L10.8337 13.1667M5.83366 14.8333H4.33366C3.40024 14.8333 2.93353 14.8333 2.57701 14.6517C2.2634 14.4919 2.00844 14.2369 1.84865 13.9233C1.66699 13.5668 1.66699 13.1001 1.66699 12.1667V5.83333C1.66699 4.89991 1.66699 4.4332 1.84865 4.07668C2.00844 3.76308 2.2634 3.50811 2.57701 3.34832C2.93353 3.16667 3.40024 3.16667 4.33366 3.16667H10.8337M10.8337 3.16667L9.16699 4.83333M10.8337 3.16667L9.16699 1.5"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                        <span>Billing</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-submenu-items">
+                                    <a href="" class="sidebar-submenu-link active">
+                                        <span>
+                                            <svg width="24" height="24" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_1_5359)">
+                                                    <path
+                                                        d="M3.33368 18.1812C3.83583 18.3333 4.51407 18.3333 5.66699 18.3333H14.3337C15.4866 18.3333 16.1648 18.3333 16.667 18.1812M3.33368 18.1812C3.22601 18.1485 3.12644 18.1089 3.03202 18.0608C2.56161 17.8211 2.17916 17.4387 1.93948 16.9683C1.66699 16.4335 1.66699 15.7334 1.66699 14.3333V5.66663C1.66699 4.26649 1.66699 3.56643 1.93948 3.03165C2.17916 2.56124 2.56161 2.17879 3.03202 1.93911C3.5668 1.66663 4.26686 1.66663 5.66699 1.66663H14.3337C15.7338 1.66663 16.4339 1.66663 16.9686 1.93911C17.439 2.17879 17.8215 2.56124 18.0612 3.03165C18.3337 3.56643 18.3337 4.26649 18.3337 5.66663V14.3333C18.3337 15.7334 18.3337 16.4335 18.0612 16.9683C17.8215 17.4387 17.439 17.8211 16.9686 18.0608C16.8742 18.1089 16.7746 18.1485 16.667 18.1812M3.33368 18.1812C3.33395 17.5067 3.338 17.1498 3.39771 16.8497C3.66073 15.5274 4.69439 14.4937 6.01669 14.2307C6.33869 14.1666 6.7259 14.1666 7.50033 14.1666H12.5003C13.2748 14.1666 13.662 14.1666 13.984 14.2307C15.3063 14.4937 16.3399 15.5274 16.6029 16.8497C16.6627 17.1498 16.6667 17.5067 16.667 18.1812M13.3337 7.91663C13.3337 9.75758 11.8413 11.25 10.0003 11.25C8.15938 11.25 6.66699 9.75758 6.66699 7.91663C6.66699 6.07568 8.15938 4.58329 10.0003 4.58329C11.8413 4.58329 13.3337 6.07568 13.3337 7.91663Z"
+                                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1_5359">
+                                                        <rect width="20" height="20" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        <span>Teammates</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="#" class="sidebar-menu-link">
+                                <span>Channels</span>
+                                <span>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.91016 19.92L15.4302 13.4C16.2002 12.63 16.2002 11.37 15.4302 10.6L8.91016 4.07996"
+                                            stroke="currentColor" stroke-width="2" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </a>
+                            <ul class="sidebar-submenu d-none">
+                                <li class="sidebar-submenu-items">
+                                    <a href="./message.html" class="sidebar-submenu-link">
+                                        <span>
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M8.5 19H8C4 19 2 18 2 13V8C2 4 4 2 8 2H16C20 2 22 4 22 8V13C22 17 20 19 16 19H15.5C15.19 19 14.89 19.15 14.7 19.4L13.2 21.4C12.54 22.28 11.46 22.28 10.8 21.4L9.3 19.4C9.14 19.18 8.77 19 8.5 19Z"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M15.9965 11H16.0054" stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M11.9955 11H12.0045" stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M7.99451 11H8.00349" stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                        <span>messenger</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-submenu-items">
+                                    <a href="" class="sidebar-submenu-link">
+                                        <span>
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M2 13H5.76C6.52 13 7.21 13.43 7.55 14.11L8.44 15.9C9 17 10 17 10.24 17H13.77C14.53 17 15.22 16.57 15.56 15.89L16.45 14.1C16.79 13.42 17.48 12.99 18.24 12.99H21.98"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M10.34 7H13.67" stroke="currentColor" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M9.5 10H14.5" stroke="currentColor" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+
+                                        </span>
+                                        <span>Emails</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-submenu-items"><a href="" class="sidebar-submenu-link">
+                                        <span>
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M21.97 18.33C21.97 18.69 21.89 19.06 21.72 19.42C21.55 19.78 21.33 20.12 21.04 20.44C20.55 20.98 20.01 21.37 19.4 21.62C18.8 21.87 18.15 22 17.45 22C16.43 22 15.34 21.76 14.19 21.27C13.04 20.78 11.89 20.12 10.75 19.29C9.6 18.45 8.51 17.52 7.47 16.49C6.44 15.45 5.51 14.36 4.68 13.22C3.86 12.08 3.2 10.94 2.72 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C11.27 13.75 11.79 14.24 12.32 14.69C12.84 15.13 13.27 15.43 13.61 15.61C13.66 15.63 13.72 15.66 13.79 15.69C13.87 15.72 13.95 15.73 14.04 15.73C14.21 15.73 14.34 15.67 14.45 15.56L15.21 14.81C15.46 14.56 15.7 14.37 15.93 14.25C16.16 14.11 16.39 14.04 16.64 14.04C16.83 14.04 17.03 14.08 17.25 14.17C17.47 14.26 17.7 14.39 17.95 14.56L21.26 16.91C21.52 17.09 21.7 17.3 21.81 17.55C21.91 17.8 21.97 18.05 21.97 18.33Z"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" />
+                                            </svg>
+                                        </span>
+                                        <span>Phones</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-submenu-items"><a href="" class="sidebar-submenu-link">
+                                        <span>
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M22 6.25V11.35C22 12.62 21.58 13.69 20.83 14.43C20.09 15.18 19.02 15.6 17.75 15.6V17.41C17.75 18.09 16.99 18.5 16.43 18.12L15.46 17.48C15.55 17.17 15.59 16.83 15.59 16.47V12.4C15.59 10.36 14.23 9 12.19 9H5.39999C5.25999 9 5.13 9.01002 5 9.02002V6.25C5 3.7 6.7 2 9.25 2H17.75C20.3 2 22 3.7 22 6.25Z"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path
+                                                    d="M15.59 12.4V16.47C15.59 16.83 15.55 17.17 15.46 17.48C15.09 18.95 13.87 19.87 12.19 19.87H9.47L6.45 21.88C6 22.19 5.39999 21.86 5.39999 21.32V19.87C4.37999 19.87 3.53 19.53 2.94 18.94C2.34 18.34 2 17.49 2 16.47V12.4C2 10.5 3.18 9.19002 5 9.02002C5.13 9.01002 5.25999 9 5.39999 9H12.19C14.23 9 15.59 10.36 15.59 12.4Z"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                        <span>SMS</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-submenu-items"><a href="" class="sidebar-submenu-link">
+                                        <span>
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M21.67 14.3L21.27 19.3C21.12 20.83 21 22 18.29 22H5.71001C3.00001 22 2.88001 20.83 2.73001 19.3L2.33001 14.3C2.25001 13.47 2.51001 12.7 2.98001 12.11C2.99001 12.1 2.99001 12.1 3.00001 12.09C3.55001 11.42 4.38001 11 5.31001 11H18.69C19.62 11 20.44 11.42 20.98 12.07C20.99 12.08 21 12.09 21 12.1C21.49 12.69 21.76 13.46 21.67 14.3Z"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" />
+                                                <path
+                                                    d="M3.5 11.43V6.28003C3.5 2.88003 4.35 2.03003 7.75 2.03003H9.02C10.29 2.03003 10.58 2.41003 11.06 3.05003L12.33 4.75003C12.65 5.17003 12.84 5.43003 13.69 5.43003H16.24C19.64 5.43003 20.49 6.28003 20.49 9.68003V11.47"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M9.42999 17H14.57" stroke="currentColor" stroke-width="1.5"
+                                                    stroke-miterlimit="10" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                        <span>Social Channels</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="#" class="sidebar-menu-link">
+                                <span>
+                                    integration
+                                </span>
+                                <span>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.91016 19.92L15.4302 13.4C16.2002 12.63 16.2002 11.37 15.4302 10.6L8.91016 4.07996"
+                                            stroke="currentColor" stroke-width="2" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="#" class="sidebar-menu-link">
+                                <span>help center</span>
+                                <span>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.91016 19.92L15.4302 13.4C16.2002 12.63 16.2002 11.37 15.4302 10.6L8.91016 4.07996"
+                                            stroke="currentColor" stroke-width="2" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Sidebar - End -->
+
+            <!-- Wrapper -->
+            <div class="contant-wrapper">
+                <div class="border rounded h-100">
+                    <div class="border-bottom p-4">
+                        <h2 class="fw-bold text-4 mb-0">Teammates</h2>
+                    </div>
+                    <div class="p-4">
+                        <div class="row">
+                            <!-- Teams To Banner -->
+                            <div class="col-md-12">
+                                <div class="teams-banner">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-9">
+                                            <h3 class="fw-bold">
+                                                <span class="text-body-tertiary">Invite your teammates to</span>
+                                                CompilerX-Chatbot
+                                            </h3>
+                                            <p class="w-75">You can add them one by one or upload many with a CSV file.
+                                                You'll also
+                                                be
+                                                able to set up
+                                                their permissions and roles.</p>
+                                            <button class="btn btn-primary d-flex align-items-center">
+                                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.5 6V12M6.5 9H12.5M17 9C17 13.1421 13.6421 16.5 9.5 16.5C5.35786 16.5 2 13.1421 2 9C2 4.85786 5.35786 1.5 9.5 1.5C13.6421 1.5 17 4.85786 17 9Z"
+                                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                <span class="ms-2">Add language</span>
+                                            </button>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <div class="col-md-4 mb-3">
+                                                    <img src="../../assets/images/team_1.svg" alt="" srcset=""
+                                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                                </div>
+                                                <div class="col-md-4 mb-3">
+                                                    <img src="../../assets/images/team_2.svg" alt="" srcset=""
+                                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                                </div>
+                                                <div class="col-md-4 mb-3">
+                                                    <img src="../../assets/images/team_3.svg" alt="" srcset=""
+                                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <img src="../../assets/images/team_4.svg" alt="" srcset=""
+                                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <img src="../../assets/images/team_5.svg" alt="" srcset=""
+                                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <img src="../../assets/images/team_6.svg" alt="" srcset=""
+                                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="teams-banner-close">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15 5L5 15M5 5L15 15" stroke="#666666" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Teams To Banner -->
+                            <div class="col-md-12">
+                                <div class="content flex-grow-1 pt-3 w-50">
+                                    <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active px-4 border-2" id="teammates-tab"
+                                                data-bs-toggle="tab" data-bs-target="#teammates" type="button"
+                                                role="tab" aria-controls="teammates"
+                                                aria-selected="true">Teammates</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link px-4 border-2" id="invited-tab" data-bs-toggle="tab"
+                                                data-bs-target="#invited" type="button" role="tab"
+                                                aria-controls="invited" aria-selected="false">Invited</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link px-4 border-2" id="roles-tab" data-bs-toggle="tab"
+                                                data-bs-target="#roles" type="button" role="tab" aria-controls="roles"
+                                                aria-selected="false">Roles</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link px-4 border-2" id="activity_logs-tab"
+                                                data-bs-toggle="tab" data-bs-target="#activity_logs" type="button"
+                                                role="tab" aria-controls="activity_logs" aria-selected="false">
+                                                Activity logs</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="teammates" role="tabpanel"
+                                        aria-labelledby="teammates-tab">
+                                        <div class="teammates-data-table">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td class="ps-3">Name</td>
+                                                        <td>Status</td>
+                                                        <td>Fin AI Copilot access</td>
+                                                        <td>Permission</td>
+                                                        <td>2FA</td>
+                                                        <td class="text-center">Action</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="border-bottom">
+                                                        <td class="text-center">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckChecked">
+                                                        </td>
+                                                        <td class="ps-3">
+                                                            <div class="user-info d-flex gap-2 align-items-center">
+                                                                <div class="user-img">
+                                                                    <img src="../../assets/images/team-img1.png" alt="">
+                                                                    <span class="active-status"></span>
+                                                                </div>
+                                                                <div class="user-name=mail">
+                                                                    <p class="u-name m-0 text-dark">Puja</p>
+                                                                    <p class="u-email m-0 text-body-tertiary">
+                                                                        puja@klizos.com</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-4">
+                                                            <div class="d-flex align-items-center gap-2 cursor_pointer">
+                                                                <span class="active-status"></span>
+                                                                <span>Active</span>
+                                                                <span><svg width="12" height="7" viewBox="0 0 12 7"
+                                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                            d="M6.25185 6.25185C6.0929 6.41074 5.87736 6.5 5.65262 6.5C5.42788 6.5 5.21234 6.41074 5.0534 6.25185L0.25875 1.4572C0.1778 1.37902 0.11323 1.28549 0.0688107 1.18209C0.024391 1.07868 0.00100993 0.967463 3.20008e-05 0.854925C-0.000945928 0.742386 0.020499 0.63078 0.0631151 0.526618C0.105731 0.422456 0.168665 0.327824 0.248245 0.248244C0.327824 0.168665 0.422456 0.105731 0.526618 0.0631147C0.63078 0.0204986 0.742386 -0.000945927 0.854925 3.20014e-05C0.967463 0.00100993 1.07868 0.024391 1.18209 0.0688107C1.28549 0.11323 1.37902 0.177799 1.4572 0.25875L5.65262 4.45417L9.84804 0.25875C10.0079 0.10436 10.222 0.0189307 10.4442 0.0208618C10.6664 0.0227929 10.879 0.11193 11.0362 0.269074C11.1933 0.426219 11.2824 0.638798 11.2844 0.861025C11.2863 1.08325 11.2009 1.29735 11.0465 1.4572L6.25185 6.25185Z"
+                                                                            fill="#323232" />
+                                                                    </svg>
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-4">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <span>Included usage</span>
+                                                                <span>
+                                                                    <svg width="12" height="7" viewBox="0 0 12 7"
+                                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                            d="M6.25185 6.25185C6.0929 6.41074 5.87736 6.5 5.65262 6.5C5.42788 6.5 5.21234 6.41074 5.0534 6.25185L0.25875 1.4572C0.1778 1.37902 0.11323 1.28549 0.0688107 1.18209C0.024391 1.07868 0.00100993 0.967463 3.20008e-05 0.854925C-0.000945928 0.742386 0.020499 0.63078 0.0631151 0.526618C0.105731 0.422456 0.168665 0.327824 0.248245 0.248244C0.327824 0.168665 0.422456 0.105731 0.526618 0.0631147C0.63078 0.0204986 0.742386 -0.000945927 0.854925 3.20014e-05C0.967463 0.00100993 1.07868 0.024391 1.18209 0.0688107C1.28549 0.11323 1.37902 0.177799 1.4572 0.25875L5.65262 4.45417L9.84804 0.25875C10.0079 0.10436 10.222 0.0189307 10.4442 0.0208618C10.6664 0.0227929 10.879 0.11193 11.0362 0.269074C11.1933 0.426219 11.2824 0.638798 11.2844 0.861025C11.2863 1.08325 11.2009 1.29735 11.0465 1.4572L6.25185 6.25185Z"
+                                                                            fill="#323232" />
+                                                                    </svg>
+                                                                </span><br />
+                                                            </div>
+                                                            <p class="m-0">0/10 conversations</p>
+                                                        </td>
+                                                        <td class="py-4">Complete Access</td>
+                                                        <td class="py-4">Disabled</td>
+                                                        <td class="py-4 text-center">
+                                                            <span class="cursor_pointer">
+                                                                <svg width="18" height="18" viewBox="0 0 18 18"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M8.99998 14.9999H15.75M2.25 14.9999H3.50591C3.87279 14.9999 4.05624 14.9999 4.22887 14.9585C4.38192 14.9217 4.52824 14.8611 4.66245 14.7789C4.81382 14.6861 4.94354 14.5564 5.20296 14.297L14.625 4.87493C15.2463 4.25361 15.2463 3.24625 14.625 2.62493C14.0037 2.00361 12.9963 2.00361 12.375 2.62493L2.95295 12.047C2.69352 12.3064 2.5638 12.4361 2.47104 12.5875C2.3888 12.7217 2.32819 12.868 2.29145 13.0211C2.25 13.1937 2.25 13.3772 2.25 13.744V14.9999Z"
+                                                                        stroke="#666666" stroke-width="1.5"
+                                                                        stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckChecked">
+                                                        </td>
+                                                        <td class="ps-3">
+                                                            <div class="user-info d-flex gap-2 align-items-center">
+                                                                <div class="user-img">
+                                                                    <img src="../../assets/images/team-img1.png" alt="">
+                                                                    <span class="active-status"></span>
+                                                                </div>
+                                                                <div class="user-name=mail">
+                                                                    <p class="u-name m-0 text-dark">John Doe</p>
+                                                                    <p class="u-email m-0 text-body-tertiary">
+                                                                        john@klizos.com</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-4">
+                                                            <div class="d-flex align-items-center gap-2 cursor_pointer">
+                                                                <span class="active-status"></span>
+                                                                <span>Active</span>
+                                                                <span><svg width="12" height="7" viewBox="0 0 12 7"
+                                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                            d="M6.25185 6.25185C6.0929 6.41074 5.87736 6.5 5.65262 6.5C5.42788 6.5 5.21234 6.41074 5.0534 6.25185L0.25875 1.4572C0.1778 1.37902 0.11323 1.28549 0.0688107 1.18209C0.024391 1.07868 0.00100993 0.967463 3.20008e-05 0.854925C-0.000945928 0.742386 0.020499 0.63078 0.0631151 0.526618C0.105731 0.422456 0.168665 0.327824 0.248245 0.248244C0.327824 0.168665 0.422456 0.105731 0.526618 0.0631147C0.63078 0.0204986 0.742386 -0.000945927 0.854925 3.20014e-05C0.967463 0.00100993 1.07868 0.024391 1.18209 0.0688107C1.28549 0.11323 1.37902 0.177799 1.4572 0.25875L5.65262 4.45417L9.84804 0.25875C10.0079 0.10436 10.222 0.0189307 10.4442 0.0208618C10.6664 0.0227929 10.879 0.11193 11.0362 0.269074C11.1933 0.426219 11.2824 0.638798 11.2844 0.861025C11.2863 1.08325 11.2009 1.29735 11.0465 1.4572L6.25185 6.25185Z"
+                                                                            fill="#323232" />
+                                                                    </svg>
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-4">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <span>Included usage</span>
+                                                                <span>
+                                                                    <svg width="12" height="7" viewBox="0 0 12 7"
+                                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                            d="M6.25185 6.25185C6.0929 6.41074 5.87736 6.5 5.65262 6.5C5.42788 6.5 5.21234 6.41074 5.0534 6.25185L0.25875 1.4572C0.1778 1.37902 0.11323 1.28549 0.0688107 1.18209C0.024391 1.07868 0.00100993 0.967463 3.20008e-05 0.854925C-0.000945928 0.742386 0.020499 0.63078 0.0631151 0.526618C0.105731 0.422456 0.168665 0.327824 0.248245 0.248244C0.327824 0.168665 0.422456 0.105731 0.526618 0.0631147C0.63078 0.0204986 0.742386 -0.000945927 0.854925 3.20014e-05C0.967463 0.00100993 1.07868 0.024391 1.18209 0.0688107C1.28549 0.11323 1.37902 0.177799 1.4572 0.25875L5.65262 4.45417L9.84804 0.25875C10.0079 0.10436 10.222 0.0189307 10.4442 0.0208618C10.6664 0.0227929 10.879 0.11193 11.0362 0.269074C11.1933 0.426219 11.2824 0.638798 11.2844 0.861025C11.2863 1.08325 11.2009 1.29735 11.0465 1.4572L6.25185 6.25185Z"
+                                                                            fill="#323232" />
+                                                                    </svg>
+                                                                </span><br />
+                                                            </div>
+                                                            <p class="m-0">0/10 conversations</p>
+                                                        </td>
+                                                        <td class="py-4">Complete Access</td>
+                                                        <td class="py-4">Disabled</td>
+                                                        <td class="py-4 text-center">
+                                                            <span class="cursor_pointer">
+                                                                <svg width="18" height="18" viewBox="0 0 18 18"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M8.99998 14.9999H15.75M2.25 14.9999H3.50591C3.87279 14.9999 4.05624 14.9999 4.22887 14.9585C4.38192 14.9217 4.52824 14.8611 4.66245 14.7789C4.81382 14.6861 4.94354 14.5564 5.20296 14.297L14.625 4.87493C15.2463 4.25361 15.2463 3.24625 14.625 2.62493C14.0037 2.00361 12.9963 2.00361 12.375 2.62493L2.95295 12.047C2.69352 12.3064 2.5638 12.4361 2.47104 12.5875C2.3888 12.7217 2.32819 12.868 2.29145 13.0211C2.25 13.1937 2.25 13.3772 2.25 13.744V14.9999Z"
+                                                                        stroke="#666666" stroke-width="1.5"
+                                                                        stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="invited" role="tabpanel"
+                                        aria-labelledby="invited-tab">
+                                        <div class="w-25 m-auto text-center mt-8">
+                                            <div class="invited-not-found-icon">
+                                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M47.5 52.5V37.5M40 45H55M30 37.5H20C15.3406 37.5 13.0109 37.5 11.1732 38.2612C8.72288 39.2761 6.77614 41.2229 5.7612 43.6732C5 45.5109 5 47.8406 5 52.5M38.75 8.2269C42.4148 9.71036 45 13.3033 45 17.5C45 21.6967 42.4148 25.2896 38.75 26.7731M33.75 17.5C33.75 23.0228 29.2728 27.5 23.75 27.5C18.2272 27.5 13.75 23.0228 13.75 17.5C13.75 11.9772 18.2272 7.5 23.75 7.5C29.2728 7.5 33.75 11.9772 33.75 17.5Z"
+                                                        stroke="#666666" stroke-opacity="0.6" stroke-width="4"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <p class="text-dark mb-1 mt-3">No invites yet</p>
+                                            <p class="text-body-tertiary">Invite a teammate to work with you on Intercom
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="roles" role="tabpanel" aria-labelledby="roles-tab">
+                                        <div class="w-25 m-auto text-center mt-8">
+                                            <div class="roles-not-found-icon">
+                                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M25 20V17.5M25 31.25V28.75M25 42.5V40M13 10H47C49.8003 10 51.2004 10 52.27 10.545C53.2108 11.0243 53.9757 11.7892 54.455 12.73C55 13.7996 55 15.1997 55 18V21.25C50.1675 21.25 46.25 25.1675 46.25 30C46.25 34.8325 50.1675 38.75 55 38.75V42C55 44.8003 55 46.2004 54.455 47.27C53.9757 48.2108 53.2108 48.9757 52.27 49.455C51.2004 50 49.8003 50 47 50H13C10.1997 50 8.79961 50 7.73005 49.455C6.78924 48.9757 6.02433 48.2108 5.54497 47.27C5 46.2004 5 44.8003 5 42V38.75C9.83249 38.75 13.75 34.8325 13.75 30C13.75 25.1675 9.83249 21.25 5 21.25V18C5 15.1997 5 13.7996 5.54497 12.73C6.02433 11.7892 6.78924 11.0243 7.73005 10.545C8.79961 10 10.1997 10 13 10Z"
+                                                        stroke="#666666" stroke-opacity="0.6" stroke-width="4"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <p class="text-dark mb-1 mt-3">You have not created any roles yet</p>
+                                            <p class="text-body-tertiary">Create your first role to get started</p>
+                                            <button class="btn bg-body-secondary">New Role</button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="activity_logs" role="tabpanel"
+                                        aria-labelledby="activity_logs-tab">
+                                        <div class="teammates-activity_logs-filter">
+                                            
+                                        </div>
+                                        <div class="teammates-data-table">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <td class="ps-5">Activity</td>
+                                                        <td>Date</td>
+                                                        <td>Time</td>
+                                                        <td>IP address</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="border-bottom">
+                                                        <td class="py-4 ps-5">
+                                                            Intercom changed Fin ’s permissions. <a href="#"
+                                                                class="text-decoration-none">Details</a>
+                                                        </td>
+                                                        <td class="py-4">
+                                                            Oct 8,2024
+                                                        </td>
+                                                        <td class="py-4">5:09 PM PDT</td>
+                                                        <td class="py-4">192.168.1.101</td>
+                                                    </tr>
+                                                    <tr class="border-bottom">
+                                                        <td class="py-4 ps-5">
+                                                            Intercom changed Ankan Dutta’s permissions. <a href="#"
+                                                                class="text-decoration-none">Details</a>
+                                                        </td>
+                                                        <td class="py-4">
+                                                            Oct 10,2024
+                                                        </td>
+                                                        <td class="py-4">5:09 PM PDT</td>
+                                                        <td class="py-4">10.0.0.45</td>
+                                                    </tr>
+                                                    <tr class="border-bottom">
+                                                        <td class="py-4 ps-5">
+                                                            Intercom revoked Full and Copilot seats from Ankan Dutta. <a
+                                                                href="#" class="text-decoration-none">Details</a>
+                                                        </td>
+                                                        <td class="py-4">
+                                                            Oct 12,2024
+                                                        </td>
+                                                        <td class="py-4">5:09 PM PDT</td>
+                                                        <td class="py-4">172.16.254.5</td>
+                                                    </tr>
+                                                    <tr class="border-bottom">
+                                                        <td class="py-4 ps-5">
+                                                            Intercom revoked core and copilot seats from Ankan Dutta.
+                                                        </td>
+                                                        <td class="py-4">
+                                                            Oct 14,2024
+                                                        </td>
+                                                        <td class="py-4">5:09 PM PDT</td>
+                                                        <td class="py-4">192.0.2.10</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Wrapper - End -->
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../../assets/js/jquery-3.7.1.slim.min.js"></script>
+    <!--Bootstrap Bundle with Popper -->
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="../../assets/js/owl.carousel.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="../../assets/js/main.js"></script>
+</body>
+
+</html>
