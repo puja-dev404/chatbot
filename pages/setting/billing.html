@@ -9,12 +9,14 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../../assets/css/index.css" />
     <link rel="stylesheet" href="../../assets/css/layout.css" />
     <link rel="stylesheet" href="../../assets/css/setting.css" />
     <link rel="stylesheet" href="../../assets/css/responsive.css" />
+    <link rel="stylesheet" href="../../assets/css/billing.css" />
 
 </head>
 
@@ -313,7 +315,7 @@
             <!-- Wrapper -->
             <div class="contant-wrapper">
                 <div class="border rounded h-100">
-                    <div class="border-bottom p-4">
+                    <div class="border-bottom p-3">
                         <h2 class="fw-bold text-4 mb-0">Billing</h2>
                     </div>
                     <div class="row">
@@ -385,7 +387,7 @@
                                     <div class="tab-pane fade" id="manageusgae" role="tabpanel"
                                         aria-labelledby="contact-tab">
 
-                                        <div class="alert alert-secondary d-flex align-items-start" role="alert">
+                                        <div class="alert alert-secondary d-flex align-items-start ms-2 mt-5" role="alert">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -397,7 +399,7 @@
                                                 may differ from what appears on your invoice.</span>
                                         </div>
 
-                                        <div class="col-10 mt-4">
+                                        <div class="col-10 mt-2 ms-2">
                                             <div>
                                                 <h3 class="fw-bolder">Usage this period</h3>
                                                 <p class="text-secondary">After you've set Fin AI Agent live through
@@ -407,9 +409,9 @@
                                             </div>
                                         </div>
 
-                                        <div class="row mt-4">
+                                        <div class="row ms-2">
                                             <div class="col-6">
-                                                <div class="bg-light p-4 border rounded">
+                                                <div class="bg-light p-4  rounded ">
                                                     <div class="col-md-12">
                                                         <h4 class="mb-5">Fin AI Agent Resolution</h4>
                                                         <div class="d-flex justify-content-between align-items-center">
@@ -421,47 +423,119 @@
                                             </div>
                                         </div>
 
-                                        <div class="accordion-item rounded-3">
-                                            <h2 class="accordion-header" id="headingThree">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#show-the-messenger-lancher" aria-expanded="false"
-                                                    aria-controls="show-the-messenger-lancher">
-                                                    <span>Usage notification</span>
-                                                    <br>
-                                                    <p>Set up a reminder to manage additional spending.</p>
-                                                </button>
-                                            </h2>
-                                            <div id="show-the-messenger-lancher" class="accordion-collapse collapse"
-                                                aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                                <div class="accordion-body">
-                                                    <p class="text-secondary">Emails will be sent to your billing
-                                                        contacts. <span class="text-primary "><u>Manage billing
-                                                                contacts.</u></span></p>
+                                        <div class="container mt-2">
+                                            <div class="accordion" id="accordionExample">
+                                                <!-- First Accordion Item -->
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingOne">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                            <div>
+                                                                <span>Usage notifications</span>
+                                                                <p class="mb-0 text-secondary">Set up a reminder to manage additional spending.</p>
+                                                            </div>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                                        data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                            <p class="text-secondary">
+                                                                Emails will be sent to your billing contacts. 
+                                                                <span class="text-primary"><u>Manage billing contacts.</u></span>
+                                                            </p>
+                                                            <div class="container ">
+                                                                <!-- Box Container -->
+                                                                <div class="shadow-sm p-3 bg-white rounded">
+                                                                    <!-- Toggle Section -->
+                                                                    <div class="d-flex justify-content-between align-items-center">
+                                                                        <label class="form-check-label m-0">
+                                                                            Set a usage reminder for this workspace
+                                                                        </label>
+                                                                        <!-- Toggle Switch -->
+                                                                        <div class="form-check form-switch">
+                                                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault1" checked="">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <!-- Border Bottom -->
+                                                                <hr class="my-3">
+                                                            
+                                                                <!-- Learn More and Save Section -->
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <!-- Icon and Text -->
+                                                                    <div class="d-flex align-items-center">
+                                                                        <img src="/assets/images/billing-icon-img.png" alt="Learn More Icon" style="height: 20px;" class="me-2">
+                                                                        <a href="#" class="text-primary text-decoration-none">
+                                                                            Learn about Fin AI Agent usage reminders
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                    <!-- Save Button -->
+                                                                    <button class="btn btn-dark">Save</button>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                    
+                                                <!-- Second Accordion Item -->
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingTwo">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                            <div>
+                                                                <span>Usage notifications</span>
+                                                                <p class="mb-0 text-secondary">Set up a reminder to manage additional spending.</p>
+                                                            </div>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                                        data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                            <p class="text-secondary">
+                                                                Emails will be sent to your billing contacts. 
+                                                                <span class="text-primary"><u>Manage billing contacts.</u></span>
+                                                            </p>
+                                                            <div class="container ">
+                                                                <!-- Box Container -->
+                                                                <div class="shadow-sm p-3 bg-white rounded">
+                                                                    <!-- Toggle Section -->
+                                                                    <div class="d-flex justify-content-between align-items-center">
+                                                                        <label class="form-check-label m-0">
+                                                                            Set a usage reminder for this workspace
+                                                                        </label>
+                                                                        <!-- Toggle Switch -->
+                                                                        <div class="form-check form-switch">
+                                                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault1" checked="">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <!-- Border Bottom -->
+                                                                <hr class="my-3">
+                                                            
+                                                                <!-- Learn More and Save Section -->
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <!-- Icon and Text -->
+                                                                    <div class="d-flex align-items-center">
+                                                                        <img src="/assets/images/billing-icon-img.png" alt="Learn More Icon" style="height: 20px;" class="me-2">
+                                                                        <a href="#" class="text-primary text-decoration-none">
+                                                                            Learn about Fin AI Agent usage reminders
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                    <!-- Save Button -->
+                                                                    <button class="btn btn-dark">Save</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <div class="accordion-item rounded-3">
-                                            <h2 class="accordion-header" id="headingThree">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#show-the-messenger-lancher" aria-expanded="false"
-                                                    aria-controls="show-the-messenger-lancher">
-                                                    <span>Usage notification</span>
-                                                    <br>
-                                                    <p>Set up a reminder to manage additional spending.</p>
-                                                </button>
-                                            </h2>
-                                            <div id="show-the-messenger-lancher" class="accordion-collapse collapse"
-                                                aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                                <div class="accordion-body">
-                                                    <p class="text-secondary">Emails will be sent to your billing
-                                                        contacts. <span class="text-primary "><u>Manage billing
-                                                                contacts.</u></span></p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    
 
 
                                     </div>
@@ -532,7 +606,7 @@
                                                         <p>You can add multiple email addresses seprating them with a
                                                             comma or space.</p>
                                                     </div>
-                                                    <div class="mt-5">
+                                                    <div class="mb-5">
                                                         <button class="btn btn-dark">Save</button>
                                                     </div>
                                                 </div>

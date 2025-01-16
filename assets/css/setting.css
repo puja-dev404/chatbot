@@ -801,17 +801,18 @@
     color: #0177FB;
 }
 
-.box-title {
+/* .box-title {
     font-size: 22px;
     font-weight: 500;
     color: #000;
     margin-bottom: 8px;
-}
+} */
 
-.box-description {
+/* .box-description {
     font-size: 16px;
     color: #666;
-}
+    
+} */
 
 .teams-banner {
     position: relative;

@@ -8,17 +8,20 @@
 }
 
 .ai-info-row {
-    background-color: #F7F7F7;
+    background-color: #6666660D;
     cursor: pointer;
+    color: #18171B;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 .ai-info-row:hover {
     background-color: #323232;
-    color: #d1d1d1;
+    color: #FFFFFF;
 }
 
 .ai-info-row:hover .install-messanger {
-    color: #d1d1d1;
+    color: #FFFFFF;
 }
 
 .ai-download-icon {
@@ -89,4 +92,19 @@
     border-radius: 6px;
 }
 
+.install-ai-info{
+    color: #5f5f5f;
+    font-size: 15px;
+    font-weight: 400;
+}
+.install-messenger-section button{
+    background-color: rgba(50, 50, 50, 1);
+    color: rgba(255, 255, 255, 1);
+
+}
+.install-messenger-section button:hover{
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(50, 50, 50, 1);    
+    border: 1px solid rgba(50, 50, 50, 1);
+}
 /* Ai First Download CSS  */
